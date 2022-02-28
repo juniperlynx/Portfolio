@@ -64,7 +64,6 @@ function NavBar(props) {
                     TODO: sync these with those in Menu.js
                 */}
                 <FixedLink to="/">Intro</FixedLink>
-                <FixedLink to="/uno">Uno Computer</FixedLink>
                 <Burger
                     className="navbar"
                     navMenuOpen={props.navMenuOpen}

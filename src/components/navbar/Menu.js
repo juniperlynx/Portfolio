@@ -60,7 +60,6 @@ function Menu(props) {
                     TODO: Load these from same place as Navbar.js
                 */}
                 <li><NavLink to="/">Intro</NavLink></li>
-                <li><NavLink to="/uno">Uno Computer</NavLink></li>
             </LinkWrapper>
         </Drawer>
     );
