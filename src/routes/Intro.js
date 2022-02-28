@@ -31,6 +31,9 @@ function Intro() {
                         or scroll down to read about the development of 
                         this site.
                     </p>
+                    <p>&emsp;If you'd like to get in touch, shoot me an email
+                        at <a href="mailto:juniper@jnp-3r.net">juniper@jnp-3r.net</a>
+                    </p>
                     <p>Enjoy your stay!</p>
                 </Abstract>
                 <ScrollBottomButton/>
