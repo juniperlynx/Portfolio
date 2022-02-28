@@ -9,12 +9,13 @@ import { useSpring, animated } from "react-spring";
     contrast between the text area and BG.
 */}
 const BumperContainer = styled.div`
-    position: absolute;
+
     height: 100%;
     width: 100%;
     text-align: center;
     background-color: #cceeff;
     display: flex;
+    flex-flow: column;
 `
 
 const ContinuedContainer = styled.div`
@@ -25,6 +26,7 @@ const ContinuedContainer = styled.div`
     text-align: center;
     background-color: #cceeff;
     display: flex;
+    flex-flow: column;
 `
 
 const InnerContainer = styled(animated.div)`
@@ -36,12 +38,11 @@ const InnerContainer = styled(animated.div)`
 
     overflow-y: auto;
     flex-grow: 1;
+    width: 90%;
     max-width: 1100px;
-    margin 6rem 2rem 2rem;
-
-    @media (min-width: 1175px) {
-        margin 6rem auto 2rem;
-    }
+    margin: 6rem auto 2rem;
+    display: flex;
+    flex-flow: column;
 `
 
 const Heading = styled(animated.h1)`
@@ -53,6 +54,7 @@ const Heading = styled(animated.h1)`
 const Abstract = styled(animated.div)`
     text-align: left;
     padding: 0 3rem 1rem;
+    flex-grow: 1;
 
     & p {
         color: #00334d;
@@ -68,6 +70,7 @@ const Abstract = styled(animated.div)`
 const Writeup = styled(animated.div)`
     text-align: left;
     padding: 2rem 3rem 1rem;
+    flex-grow: 1;
 
     & p {
         color: #00334d;

@@ -4,9 +4,11 @@ import styled from "styled-components";
 
 {/* Set up styles for scroll buttons */}
 const ScrollButton = styled.button`
-    position: absolute;
+    position: sticky;
     bottom: 2rem;
-    right: 3rem;
+    margin-left: auto;
+    margin-right: 2rem;
+    flex-shrink: 0;
     height: 3.5rem;
     width: 3.5rem;
     background-color: #0077b3;
