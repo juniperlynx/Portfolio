@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useSpring, animated } from "react-spring";
 
 {/*
     Define styles to be used later. Here we have BumperContainer to define
@@ -26,11 +27,12 @@ const ContinuedContainer = styled.div`
     display: flex;
 `
 
-const InnerContainer = styled.div`
+const InnerContainer = styled(animated.div)`
+    position: relative;
     background-color: #ffffff;
     border: none;
     border-radius: 10px;
-    box-shadow: 2px 2px 12px -2px #00111a;
+    box-shadow: 2px 2px 10px -2px #00111a;
 
     overflow-y: auto;
     flex-grow: 1;
@@ -42,13 +44,13 @@ const InnerContainer = styled.div`
     }
 `
 
-const Heading = styled.h1`
+const Heading = styled(animated.h1)`
     padding-top: 2rem;
     font-size: 4rem;
     color: #0077b3;
 `
 
-const Abstract = styled.div`
+const Abstract = styled(animated.div)`
     text-align: left;
     padding: 0 3rem 1rem;
 
@@ -63,7 +65,7 @@ const Abstract = styled.div`
     }
 `
 
-const Writeup = styled.div`
+const Writeup = styled(animated.div)`
     text-align: left;
     padding: 2rem 3rem 1rem;
 
@@ -79,9 +81,15 @@ const Writeup = styled.div`
 `
 
 function Bumper(props) {
+    const fadeIn = useSpring({
+        from: { opacity: 0 },
+        opacity: 1,
+        delay: 200
+    });
+
     return (
         <BumperContainer>
-            <InnerContainer>
+            <InnerContainer style={fadeIn}>
                 {props.children}
             </InnerContainer>
         </BumperContainer>
@@ -89,9 +97,15 @@ function Bumper(props) {
 }
 
 function Continued(props) {
+    const fadeIn = useSpring({
+        from: { opacity: 0 },
+        opacity: 1,
+        delay: 200
+      });
+
     return (
         <ContinuedContainer>
-            <InnerContainer>
+            <InnerContainer style={fadeIn}>
                 {props.children}
             </InnerContainer>
         </ContinuedContainer>

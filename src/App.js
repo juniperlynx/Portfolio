@@ -29,9 +29,27 @@ class App extends React.Component {
         this.setState({ navMenuOpen: !this.state.navMenuOpen});
     }
 
+    /* Define event handler to close nav when window is embiggened */
+    handleResizeNav = () => {
+        const windowSize = window.innerWidth;
+ 
+        if (this.state.navMenuOpen && windowSize > 750) {
+            this.setState({navMenuOpen: false});
+        }
+    };
+
+    /* Add and remove event listeners for nav resize on mount / unmount */
+    componentDidMount() {
+        window.addEventListener("resize", this.handleResizeNav);
+    }
+    
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.handleResizeNav);
+    }
+
     /* 
         Render the basic structure of page content (from router) & navbar. 
-        This is also where we call glogal style
+        This is also where we call global style
     */
     render() {
         return (

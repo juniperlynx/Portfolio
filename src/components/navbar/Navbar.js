@@ -53,7 +53,7 @@ function NavBar(props) {
     const navAnimation = useSpring({
         from: { transform: 'translate3d(0, -10rem, 0)' },
         transform: 'translate3d(0, 0, 0)',
-      });
+    });
 
     return (
         <>

@@ -1,13 +1,16 @@
 import React from "react";
+
 import {
     Bumper,
     Heading,
     Abstract,
-} from "../templates/TwoPageTemplate"
+} from "../components/PageTemplate"
+import ScrollToTop from "../components/Scroll";
 
 function FourOhFour() {
     return (
         <>
+            <ScrollToTop/>
             <Bumper>
                 <Heading>404</Heading>
                 <Abstract>
