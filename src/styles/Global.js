@@ -16,6 +16,35 @@ const GlobalStyles = createGlobalStyle`
         padding: 0px;
         overflow-x: hidden;
     }
+
+    p {
+        color: #00334d;
+        font-size: 1.2rem;
+    }
+
+    h1 {
+        color: #0077b3;
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        color: #0077b3;
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: 600px) {
+        p {
+            font-size: 1rem;
+        }
+    
+        h1 {
+            font-size: 3rem;
+        }
+    
+        h2 {
+            font-size: 2rem;
+        }
+    }
 `;
 
 export default GlobalStyles;

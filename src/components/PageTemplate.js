@@ -47,40 +47,18 @@ const InnerContainer = styled(animated.div)`
 
 const Heading = styled(animated.h1)`
     padding-top: 2rem;
-    font-size: 4rem;
-    color: #0077b3;
 `
 
 const Abstract = styled(animated.div)`
     text-align: left;
     padding: 0 3rem 2rem;
     flex-grow: 1;
-
-    & p {
-        color: #00334d;
-        font-size: 1.2rem;
-    }
-
-    & h2{
-        color: #0077b3;
-        font-size: 2.5rem;
-    }
 `
 
 const Writeup = styled(animated.div)`
     text-align: left;
     padding: 2rem 3rem 2rem;
     flex-grow: 1;
-
-    & p {
-        color: #00334d;
-        font-size: 1.2rem;
-    }
-
-    & h2{
-        color: #0077b3;
-        font-size: 2.5rem;
-    }
 `
 
 function Bumper(props) {
