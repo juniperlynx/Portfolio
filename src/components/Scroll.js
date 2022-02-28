@@ -2,12 +2,18 @@ import React, { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 
-{/* Set up styles for scroll buttons */}
+{/* 
+    Set up styles for scroll button. Note the funky combo of positioning,
+    margins, and flex. The position: sticky forces the element to the
+    bottom in situations where the window is too small and the flexbox
+    above should grow to squish the button down when window is larger.
+    The margins are set so the button is squeezed to the right.
+*/}
 const ScrollButton = styled.button`
     position: sticky;
     bottom: 2rem;
     margin-left: auto;
-    margin-right: 2rem;
+    margin-right: 1rem;
     flex-shrink: 0;
     height: 3.5rem;
     width: 3.5rem;
@@ -31,7 +37,6 @@ const ScrollButton = styled.button`
     }
 `
 
-{/* Define page to page scroll buttons to be used elsewhere */}
 function ScrollTopButton() {
     function scrollTop() {
         window.scroll({
@@ -58,7 +63,6 @@ function ScrollBottomButton() {
     return <ScrollButton onClick={scrollBottom}>{'\u25bc'}</ScrollButton>;
 }
 
-{/* Simple component to force a scroll to top when rendered */}
 function ScrollToTop() {
   const { pathname } = useLocation();
 

@@ -41,7 +41,23 @@ function Intro() {
             <Continued>
                 <Writeup style={fadeIn}>
                     <h2>Still here? Awesome!</h2>
-                    <p>&emsp;Would you like to learn more?</p>
+                    <p>&emsp;It felt a little silly to write a separate feature
+                        for this site, <em>on</em> this site, but it represents
+                        a huge amount of work and is my first ever React.js app,
+                        so it deserves some credit.
+                    </p>
+                    <p>&emsp;Writing this site has pushed me to develop my 
+                        skills in JavaScript and deepened my knowledge of HTML,
+                        CSS, and the DOM. It's been some time since I've used 
+                        JS on the web (the last web app I wrote used PHP and
+                        JQuery), and I'm excited to see how far things have come
+                        with modern frameworks bringing much better integration
+                        and reusability to the web as a platform.
+                    </p>
+                    <p>&emsp;This project is still a work in progress, but feel
+                        free to check out the source and tag along with 
+                        future updates on my <a href="https://github.com/juniperlynx/Portfolio">Github</a>
+                    </p>
                 </Writeup>
                 <ScrollTopButton/>
             </Continued>
