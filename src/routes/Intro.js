@@ -42,9 +42,9 @@ function Intro() {
                 <Writeup style={fadeIn}>
                     <h2>Still here? Awesome!</h2>
                     <p>&emsp;It felt a little silly to write a separate feature
-                        for this site, <em>on</em> this site, but it represents
-                        a huge amount of work and is my first ever React.js app,
-                        so it deserves some credit.
+                        for this site, <em>on</em> this site, but it still
+                        represents a huge amount of work and is my first ever
+                        React.js app, so it deserves some credit.
                     </p>
                     <p>&emsp;Writing this site has pushed me to develop my 
                         skills in JavaScript and deepened my knowledge of HTML,
@@ -56,7 +56,7 @@ function Intro() {
                     </p>
                     <p>&emsp;This project is still a work in progress, but feel
                         free to check out the source and tag along with 
-                        future updates on my <a href="https://github.com/juniperlynx/Portfolio">Github</a>
+                        future updates on my <a href="https://github.com/juniperlynx/Portfolio">Github</a>.
                     </p>
                 </Writeup>
                 <ScrollTopButton/>
