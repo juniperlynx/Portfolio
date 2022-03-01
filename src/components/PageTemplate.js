@@ -9,9 +9,8 @@ import { useSpring, animated } from "react-spring";
     contrast between the text area and BG.
 */}
 const BumperContainer = styled.div`
-
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
+    width: 100vw;
     text-align: center;
     background-color: #cceeff;
     display: flex;
@@ -19,10 +18,8 @@ const BumperContainer = styled.div`
 `
 
 const ContinuedContainer = styled.div`
-    top: 100%;
-    position: absolute;
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
+    width: 100vw;
     text-align: center;
     background-color: #cceeff;
     display: flex;
@@ -69,7 +66,7 @@ function Bumper(props) {
     });
 
     return (
-        <BumperContainer>
+        <BumperContainer id={props.id}>
             <InnerContainer style={fadeIn}>
                 {props.children}
             </InnerContainer>
@@ -85,7 +82,7 @@ function Continued(props) {
       });
 
     return (
-        <ContinuedContainer>
+        <ContinuedContainer id={props.id}>
             <InnerContainer style={fadeIn}>
                 {props.children}
             </InnerContainer>

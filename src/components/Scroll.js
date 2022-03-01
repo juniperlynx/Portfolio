@@ -2,31 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 
-{/*
-    Define custom hooks for window height so it will be updated on resize
-    We'll use it later.
- */}
-function getWindowHeight() {
-    const height = window.innerHeight;
-    return height;
-}
-
-function useWindowHeight() {
-    const [ windowHeight, setWindowHeight ]= useState(getWindowHeight());
-
-    useEffect(() => {
-        function handleResize() {
-            setWindowHeight(getWindowHeight());
-        }
-
-        
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
-    return windowHeight;
-}
-
 {/* 
     Set up styles for scroll button. Note the funky combo of positioning,
     margins, and flex. The position: sticky forces the element to the
@@ -62,32 +37,6 @@ const ScrollButton = styled.button`
     }
 `
 
-function ScrollBottomButton() {
-    const height = useWindowHeight();
-
-    function scrollBottom() {
-        window.scroll({
-            top: height,
-            left: 0, 
-            behavior: 'smooth',
-        });
-    }
-    
-    return <ScrollButton onClick={scrollBottom}>{'\u25bc'}</ScrollButton>;
-}
-
-function ScrollTopButton() {
-    function scrollTop() {
-        window.scroll({
-            top: 0,
-            left: 0, 
-            behavior: 'smooth',
-        });
-    }
-    
-      return <ScrollButton onClick={scrollTop}>{'\u25b2'}</ScrollButton>;
-}
-
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -103,4 +52,4 @@ function ScrollToTop() {
 }
 
 export default ScrollToTop;
-export { ScrollTopButton, ScrollBottomButton };
+export { ScrollButton };
