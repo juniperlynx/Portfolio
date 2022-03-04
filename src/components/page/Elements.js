@@ -58,6 +58,24 @@ const Writeup = styled(animated.div)`
     flex-grow: 1;
 `
 
+const FootBox = styled.div`
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    width: 60%;
+    margin: 1rem auto 1rem;
+    background-color: #ffffff;
+    border: 2px solid #0077b3;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px -2px #00111a;
+    flex-shrink: 0;
+
+    @media (max-width: 750px) {
+        margin: 1rem auto 2.5rem;
+    }
+`
+
+const Badge = styled.span``
+
 function Bumper(props) {
     const fadeIn = useSpring({
         from: { opacity: 0 },
@@ -95,5 +113,7 @@ export {
     Heading,
     Abstract,
     Continued,
-    Writeup
+    Writeup,
+    FootBox,
+    Badge
 }

@@ -6,7 +6,8 @@ import {
     Heading,
     Abstract,
     Continued,
-    Writeup
+    Writeup,
+    FootBox
 } from "./Elements"
 import ScrollToTop, { ScrollButton } from "../Scroll";
 
@@ -25,6 +26,7 @@ function OnePage(props) {
                 <Abstract style={fadeIn}>
                     {props.abstract}
                 </Abstract>
+                {props.footer && <FootBox>{props.footer}</FootBox>}
             </Bumper>
         </>
     )
@@ -57,6 +59,7 @@ function TwoPage(props) {
                     <Abstract style={fadeIn}>
                         {props.abstract}
                     </Abstract>
+                    {props.footer && <FootBox>{props.footer}</FootBox>}
                     <ScrollButton onClick={scrollBottom}>{'\u25bc'}</ScrollButton>
                 </Bumper>
             </div>

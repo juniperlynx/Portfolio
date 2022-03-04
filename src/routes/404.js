@@ -1,6 +1,6 @@
 import React from "react";
 
-import { OnePage } from "../components/pagetemplate/Templates"
+import { OnePage } from "../components/page/Templates"
 
 function FourOhFour() {
     return (

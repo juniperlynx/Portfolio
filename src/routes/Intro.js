@@ -1,5 +1,5 @@
 import React from "react";
-import TwoPage from "../components/pagetemplate/Templates"
+import TwoPage from "../components/page/Templates"
 
 function Intro() {
     return (
@@ -14,10 +14,10 @@ function Intro() {
                     or scroll down to read about the development of 
                     this site.
                 </p>
-                <p>&emsp;If you'd like to get in touch, shoot me an email
-                    at <a href='mailto:juniper@jnp-3r.net'>juniper@jnp-3r.net</a>
-                </p>
-                <p>Enjoy your stay!</p>
+                <p>&emsp;Feel free to get in touch and enjoy your stay!</p>
+            </>}
+            footer={<>
+                <h3>Contact: <a href='mailto:juniper@jnp-3r.net'>{'\u2709'} juniper@jnp-3r.net</a></h3>
             </>}
             writeup={<>
                 <h2>Still here? Awesome!</h2>
