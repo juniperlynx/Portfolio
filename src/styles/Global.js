@@ -47,7 +47,11 @@ const GlobalStyles = createGlobalStyle`
         }
     
         h2 {
-            font-size: 2rem;
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
         }
     }
 `;
