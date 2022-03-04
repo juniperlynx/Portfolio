@@ -55,11 +55,9 @@ function Menu(props) {
     return (
         <Drawer style={drawerAnimation}>
             <LinkWrapper>
-                {/*
-                    Navlinks go here
-                    TODO: Load these from same place as Navbar.js
-                */}
-                <li><NavLink to="/">Intro</NavLink></li>
+                {props.links.map(link => (
+                    <li><NavLink to={link.path}>{link.text}</NavLink></li>
+                ))}
             </LinkWrapper>
         </Drawer>
     );

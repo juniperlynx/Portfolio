@@ -55,15 +55,18 @@ function NavBar(props) {
         transform: 'translate3d(0, 0, 0)',
     });
 
+    {/* NavLinks go here */}
+    const links = [
+        {'text': 'Intro', 'path': '/'}
+    ];
+
     return (
         <>
             <AnimatedNav style={navAnimation}>
                 <Logo /> 
-                {/*
-                    NavLinks go here
-                    TODO: sync these with those in Menu.js
-                */}
-                <FixedLink to="/">Intro</FixedLink>
+                {links.map(link => (
+                    <FixedLink to={link.path}>{link.text}</FixedLink>
+                ))}
                 <Burger
                     className="navbar"
                     navMenuOpen={props.navMenuOpen}
@@ -72,6 +75,7 @@ function NavBar(props) {
             </AnimatedNav>
             <Menu 
               navMenuOpen={props.navMenuOpen}
+              links={links}
             />
         </>
       );
