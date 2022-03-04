@@ -29,7 +29,12 @@ const GlobalStyles = createGlobalStyle`
 
     h2 {
         color: #0077b3;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        color: #0077b3;
+        font-size: 1.5rem;
     }
 
     @media (max-width: 750px) {
