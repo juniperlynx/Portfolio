@@ -19,8 +19,8 @@ function Intro() {
             footer={<>
                 <h3>Contact: <a href='mailto:juniper@jnp-3r.net'>{'\u2709'} juniper@jnp-3r.net</a></h3>
             </>}
+            heading2="Still here? Awesome!"
             writeup={<>
-                <h2>Still here? Awesome!</h2>
                 <p>&emsp;It felt a little silly to write a separate feature
                     for this site, <em>on</em> this site, but it still
                     represents a huge amount of work and is my first ever

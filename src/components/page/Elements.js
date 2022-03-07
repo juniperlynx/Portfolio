@@ -46,6 +46,11 @@ const Heading = styled(animated.h1)`
     padding-top: 2rem;
 `
 
+const Heading2 = styled(animated.h2)`
+    text-align: left;
+    padding: 1rem 2rem 0;
+`
+
 const Abstract = styled(animated.div)`
     text-align: left;
     padding: 0 3rem 2rem;
@@ -62,7 +67,7 @@ const FootBox = styled.div`
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     width: 60%;
-    margin: 1rem auto 1rem;
+    margin: 0rem auto 0rem;
     background-color: #ffffff;
     border: 2px solid #0077b3;
     border-radius: 10px;
@@ -70,11 +75,34 @@ const FootBox = styled.div`
     flex-shrink: 0;
 
     @media (max-width: 750px) {
-        margin: 1rem auto 2.5rem;
+        margin: 0rem auto 2.5rem;
     }
 `
 
-const Badge = styled.span``
+const Badge = styled.span`
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: #ffffff;
+    border: 2px solid #0077b3;
+    border-radius: 10px;
+`
+
+const Image = styled.img`
+    display: block;
+    float: left;
+    max-height: 45vh;
+    max-width: 45vh;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+
+    @media (max-width: 750px) {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 0;
+    }
+`
 
 function Bumper(props) {
     const fadeIn = useSpring({
@@ -111,9 +139,11 @@ function Continued(props) {
 export {
     Bumper,
     Heading,
+    Heading2,
     Abstract,
     Continued,
     Writeup,
     FootBox,
-    Badge
+    Badge,
+    Image
 }

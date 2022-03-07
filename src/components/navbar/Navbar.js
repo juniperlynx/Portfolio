@@ -43,6 +43,10 @@ const FixedLink = styled(NavLink)`
         border-bottom: 2px solid #ffd633;
     }
 
+    &:visited {
+        color: #b3e4ff;
+    }
+
     @media (max-width: 750px) {
         display: none;
     }
@@ -57,7 +61,8 @@ function NavBar(props) {
 
     {/* NavLinks go here */}
     const links = [
-        {'text': 'Intro', 'path': '/'}
+        {'text': 'Intro', 'path': '/'},
+        {'text': 'Uno Computer', 'path': '/uno'}
     ];
 
     return (

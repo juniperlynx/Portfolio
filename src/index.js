@@ -7,6 +7,7 @@ import {
 
 import App from "./App";
 import Intro from "./routes/Intro";
+import Uno from "./routes/Uno";
 import FourOhFour from "./routes/404";
 
 const rootElement = document.getElementById("root");
@@ -20,6 +21,7 @@ render(
             */}
             <Route path="/" element={<App />}>
                 <Route index element={<Intro />} />
+                <Route path="/uno" element={<Uno />} />
                 <Route path="*" element={<FourOhFour />}/>
             </Route>
         </Routes>

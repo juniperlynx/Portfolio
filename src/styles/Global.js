@@ -37,9 +37,25 @@ const GlobalStyles = createGlobalStyle`
         font-size: 1.5rem;
     }
 
+    a:link {
+        color: #005580;
+    }
+    
+    a:visited {
+        color: #00334d;
+    }
+    
+    a:hover {
+        color: #0077b3;
+    }
+    
+    a:active {
+        color: #004466;
+    }
+
     @media (max-width: 750px) {
         p {
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
     
         h1 {
@@ -51,7 +67,7 @@ const GlobalStyles = createGlobalStyle`
         }
 
         h3 {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
     }
 `;

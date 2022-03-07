@@ -4,10 +4,12 @@ import { useSpring } from "react-spring";
 import {
     Bumper,
     Heading,
+    Heading2,
     Abstract,
     Continued,
     Writeup,
-    FootBox
+    FootBox,
+    Image
 } from "./Elements"
 import ScrollToTop, { ScrollButton } from "../Scroll";
 
@@ -23,6 +25,7 @@ function OnePage(props) {
             <ScrollToTop/>
             <Bumper>
                 <Heading style={fadeIn}>{props.heading}</Heading>
+                {props.image && <FootBox>{props.image}</FootBox>}
                 <Abstract style={fadeIn}>
                     {props.abstract}
                 </Abstract>
@@ -57,6 +60,7 @@ function TwoPage(props) {
                 <Bumper>
                     <Heading style={fadeIn}>{props.heading}</Heading>
                     <Abstract style={fadeIn}>
+                        {props.image && <Image src={props.image}/>}
                         {props.abstract}
                     </Abstract>
                     {props.footer && <FootBox>{props.footer}</FootBox>}
@@ -65,9 +69,12 @@ function TwoPage(props) {
             </div>
             <div ref={bottomRef}>
                 <Continued>
+                    {props.heading2 && <Heading2 style={fadeIn}>{props.heading2}</Heading2>}
                     <Writeup style={fadeIn}>
+                        {props.image2 && <Image src={props.image2}/>}
                         {props.writeup}
                     </Writeup>
+                    {props.footer2 && <FootBox>{props.footer2}</FootBox>}
                     <ScrollButton onClick={scrollTop}>{'\u25b2'}</ScrollButton>
                 </Continued>
             </div>
