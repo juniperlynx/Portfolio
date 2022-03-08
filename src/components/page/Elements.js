@@ -82,7 +82,7 @@ const FootBox = styled.div`
 const Badge = styled.span`
     display: inline-block;
     padding: 0.5rem 0.5rem 0.6rem;
-    margin: 0rem 0.5rem 0rem;
+    margin: 0.1rem 0.5rem 0.1rem;
     background-color: #ffffff;
     border: 2px solid #0077b3;
     border-radius: 10px;
