@@ -2,8 +2,8 @@ import React from "react";
 import TwoPage from "../components/page/Templates";
 import { Badge } from "../components/page/Elements";
 
-import uno_overview from "../assets/uno_overview.jpg";
-import uno_bottom from "../assets/uno_bottom.jpg";
+import uno_overview from "../assets/images/uno_overview.jpg";
+import uno_bottom from "../assets/images/uno_bottom.jpg";
 
 function Uno() {
     return (

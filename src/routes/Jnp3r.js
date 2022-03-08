@@ -2,8 +2,7 @@ import React from "react";
 import TwoPage from "../components/page/Templates";
 import { Badge } from "../components/page/Elements";
 
-import homepage from "../assets/jnp-3r.png";
-import tester from "../assets/tester.jpg";
+import homepage from "../assets/images/jnp-3r.png";
 
 function Jnp3r() {
     return (

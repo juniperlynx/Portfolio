@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import "../assets/fonts/leaguespartan/leaguespartan.css";
 
 {/* Define style elements that will apply to our whole app*/}
 const GlobalStyles = createGlobalStyle`
@@ -11,7 +12,7 @@ const GlobalStyles = createGlobalStyle`
 
     body {
         box-sizing: border-box;
-        font-family: sans-serif;
+        font-family: 'league_spartan', sans-serif;
         margin: 0px;
         padding: 0px;
         overflow-x: hidden;

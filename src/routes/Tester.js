@@ -2,8 +2,8 @@ import React from "react";
 import TwoPage from "../components/page/Templates";
 import { Badge } from "../components/page/Elements";
 
-import tester_demo from "../assets/tester_demo.jpg";
-import tester from "../assets/tester.jpg";
+import tester_demo from "../assets/images/tester_demo.jpg";
+import tester from "../assets/images/tester.jpg";
 
 function Tester() {
     return (

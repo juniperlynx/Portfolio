@@ -2,8 +2,8 @@ import React from "react";
 import TwoPage from "../components/page/Templates";
 import { Badge } from "../components/page/Elements";
 
-import xmas_front from "../assets/xmas_front.jpg";
-import xmas_rear from "../assets/xmas_rear.jpg";
+import xmas_front from "../assets/images/xmas_front.jpg";
+import xmas_rear from "../assets/images/xmas_rear.jpg";
 
 function Xmas() {
     return (
