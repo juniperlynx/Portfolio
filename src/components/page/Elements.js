@@ -92,7 +92,7 @@ const Image = styled.img`
     display: block;
     float: left;
     max-height: 45vh;
-    max-width: 45vh;
+    max-width: 100%;
     padding-right: 2rem;
     padding-bottom: 2rem;
 
