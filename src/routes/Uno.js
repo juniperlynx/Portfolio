@@ -30,7 +30,7 @@ function Uno() {
                 </p>
             </>}
             footer={<>
-                <h3>Skills: 
+                <h3>Skills:&ensp;
                     <Badge>Electronics</Badge>
                     <Badge>Digital Logic</Badge>
                     <Badge>Python</Badge>
@@ -77,7 +77,7 @@ function Uno() {
                 </p>
             </>}
             footer2={<>
-                <h3>Links: 
+                <h3>Links:&ensp;
                     <Badge><a href="https://github.com/juniperlynx/Uno-Computer">GitHub</a></Badge>
                 </h3>
             </>}

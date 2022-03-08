@@ -35,6 +35,7 @@ const GlobalStyles = createGlobalStyle`
     h3 {
         color: #0077b3;
         font-size: 1.5rem;
+        margin: 0.5rem;
     }
 
     a:link {
@@ -67,7 +68,7 @@ const GlobalStyles = createGlobalStyle`
         }
 
         h3 {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
     }
 `;

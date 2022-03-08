@@ -38,6 +38,10 @@ const FixedLink = styled(NavLink)`
     cursor: pointer;
     display: inline-block;
 
+    &:link {
+        color: #b3e4ff;
+    }
+
     &:hover {
         color: #ffffff;
         border-bottom: 2px solid #ffd633;
@@ -62,7 +66,10 @@ function NavBar(props) {
     {/* NavLinks go here */}
     const links = [
         {'text': 'Intro', 'path': '/'},
-        {'text': 'Uno Computer', 'path': '/uno'}
+        {'text': 'Uno CPU', 'path': '/uno'},
+        {'text': 'Xmas Cards', 'path': '/xmas'},
+        {'text': 'Cable Tester', 'path': '/tester'},
+        {'text': 'JNP-3R.net', 'path': '/jnp-3r'}
     ];
 
     return (

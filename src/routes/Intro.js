@@ -1,5 +1,6 @@
 import React from "react";
 import TwoPage from "../components/page/Templates"
+import { Badge } from "../components/page/Elements";
 
 function Intro() {
     return (
@@ -14,10 +15,13 @@ function Intro() {
                     or scroll down to read about the development of 
                     this site.
                 </p>
-                <p>&emsp;Feel free to get in touch and enjoy your stay!</p>
+                <p>&emsp;I'd love to hear any feedback or questions you may have,
+                    so feel free to get in touch with the info below.
+                    Enjoy your stay!
+                </p>
             </>}
             footer={<>
-                <h3>Contact: <a href='mailto:juniper@jnp-3r.net'>{'\u2709'} juniper@jnp-3r.net</a></h3>
+                <h3>Contact:&ensp;<Badge><a href='mailto:juniper@jnp-3r.net'>{'\u2709'} juniper@jnp-3r.net</a></Badge></h3>
             </>}
             heading2="Still here? Awesome!"
             writeup={<>
@@ -38,6 +42,14 @@ function Intro() {
                     free to check out the source and tag along with 
                     future updates on my <a href="https://github.com/juniperlynx/Portfolio">Github</a>.
                 </p>
+            </>}
+            footer2={<>
+                <h3>Skills:&ensp;
+                    <Badge>JavaScript</Badge>
+                    <Badge>React</Badge>
+                    <Badge>CSS</Badge>
+                    <Badge>HTML</Badge>
+                </h3>
             </>}
         
         />

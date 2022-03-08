@@ -43,7 +43,7 @@ const InnerContainer = styled(animated.div)`
 `
 
 const Heading = styled(animated.h1)`
-    padding-top: 2rem;
+    padding-top: 1rem;
 `
 
 const Heading2 = styled(animated.h2)`
@@ -81,8 +81,8 @@ const FootBox = styled.div`
 
 const Badge = styled.span`
     display: inline-block;
-    padding: 0.5rem;
-    margin: 0.5rem;
+    padding: 0.5rem 0.5rem 0.6rem;
+    margin: 0rem 0.5rem 0rem;
     background-color: #ffffff;
     border: 2px solid #0077b3;
     border-radius: 10px;
