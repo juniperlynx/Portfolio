@@ -39,16 +39,16 @@ const FixedLink = styled(NavLink)`
     display: inline-block;
 
     &:link {
-        color: #b3e4ff;
+        color: #ffffff;
     }
 
     &:hover {
-        color: #ffffff;
+        color: #cceeff;
         border-bottom: 2px solid #ffd633;
     }
 
     &:visited {
-        color: #b3e4ff;
+        color: #b3e6ff;
     }
 
     @media (max-width: 750px) {

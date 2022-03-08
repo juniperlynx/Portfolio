@@ -37,9 +37,17 @@ const LinkWrapper = styled.ul`
 
         font-size: 1.5rem;
 
-        &:hover {
+        &:link {
             color: #ffffff;
+        }
+
+        &:hover {
+            color: #cceeff;
             border-bottom: 2px solid #ffd633;
+        }
+
+        &:visited {
+            color: #b3e6ff;
         }
     }
 `
